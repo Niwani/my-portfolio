@@ -1,11 +1,13 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <div className="min-h-screen bg-[#242424]">
       <Navbar />
+      <Hero />
       
       {/* Main Content with Sections for Navigation IDs */}
       {/* <div className="pt-20"> Padding top to account for fixed navbar */}
