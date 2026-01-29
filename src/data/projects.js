@@ -2,9 +2,9 @@ import periodicTableImg from "../assets/projects/periodic-table.png";
 import cssExperimentsImg from "../assets/projects/css-ui.png";
 import popcornImg from "../assets/projects/popcorn.png";
 import docAppImg from "../assets/projects/DocApp.png";
-import jobBoardImg from "../assets/projects/job-board.png";
+import jobBoardImg from "../assets/projects/job-board.webp";
 import foodOrderImg from "../assets/projects/Food-order-app.png";
-import secretSantaImg from "../assets/projects/gifterly.png";
+import secretSantaImg from "../assets/projects/gifterly.webp";
 import todoListImg from "../assets/projects/todo-list.png";
 
 
