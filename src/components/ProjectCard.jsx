@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 const ProjectCard = ({ title, description, tags, githubLink, liveLink, image }) => {
   return (
     <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
       whileHover={{ y: -10 }}
       transition={{ type: "spring", stiffness: 300 }}
       className="group relative bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300"

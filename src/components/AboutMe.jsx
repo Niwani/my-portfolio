@@ -13,6 +13,7 @@ const AboutSection = () => {
     <section className="py-24 bg-white dark:bg-[#020617] transition-colors">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
+          {/* Left Column: Image */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -29,35 +30,46 @@ const AboutSection = () => {
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-blue-600 rounded-2xl -z-10"></div>
           </motion.div>
 
+          {/* Right Column: Content */}
           <div className="w-full lg:w-2/3">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-              About <span className="text-blue-600">Me</span>
-            </h2>
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+                About <span className="text-blue-600">Me</span>
+              </h2>
 
-            <div className="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              <p>
-                I am a passionate **Junior Front-End Developer** based in Nigeria, dedicated to building accessible, user-centric web applications. My journey started with a curiosity for how things work on the internet, which quickly evolved into a deep-seated love for the **React** ecosystem.
-              </p>
-              <p>
-                I thrive in environments where I can tackle fresh challenges and collaborate with teams to build scalable solutions. When I'm not debugging or tweaking **Tailwind** classes, I'm likely exploring new animation patterns in **Framer Motion** or documenting my learning journey on GitHub.
-              </p>
-            </div>
+              <div className="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                <p>
+                  I am a passionate **Junior Front-End Developer** based in Nigeria, dedicated to building accessible, user-centric web applications. My journey started with a curiosity for how things work on the internet, which quickly evolved into a deep-seated love for the **React** ecosystem.
+                </p>
+                <p>
+                  I thrive in environments where I can tackle fresh challenges and collaborate with teams to build scalable solutions. When I'm not debugging or tweaking **Tailwind** classes, I'm likely exploring new animation patterns in **Framer Motion** or documenting my learning journey on GitHub.
+                </p>
+              </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-              <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                <MapPin className="text-blue-600" size={18} />
-                <span>Lagos, Nigeria (Remote / Hybrid)</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                  <MapPin className="text-blue-600" size={18} />
+                  <span>Lagos, Nigeria (Remote / Hybrid)</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                  <GraduationCap className="text-blue-600" size={18} />
+                  <span>Self-Taught / Junior Developer</span>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                <GraduationCap className="text-blue-600" size={18} />
-                <span>Self-Taught / Junior Developer</span>
-              </div>
-            </div>
+            </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
               {coreValues.map((value, index) => (
                 <motion.div 
                   key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
                   whileHover={{ scale: 1.05 }}
                   className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800"
                 >
