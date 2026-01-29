@@ -17,7 +17,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 dark:bg-[#020617]">
+    <section id="contact" className="py-16 md:py-24 bg-slate-50 dark:bg-[#020617]">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           
@@ -25,7 +25,7 @@ const ContactSection = () => {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
                 <p className="text-slate-600 dark:text-slate-400">
                   I'm currently looking for new opportunities in Nigeria or remote roles globally. Whether you have a question or just want to say hi, I'll definitely get back to you!
                 </p>

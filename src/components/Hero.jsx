@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6">
+            <h1 className="text-4xl md:text-8xl font-black tracking-tighter text-white mb-6">
               Building for the <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 Modern Web.
