@@ -13,7 +13,6 @@ const AboutSection = () => {
     <section className="py-16 md:py-24 bg-white dark:bg-[#020617] transition-colors">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          {/* Left Column: Image */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +29,6 @@ const AboutSection = () => {
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-blue-600 rounded-2xl -z-10"></div>
           </motion.div>
 
-          {/* Right Column: Content */}
           <div className="w-full lg:w-2/3">
             <motion.div 
               initial={{ opacity: 0, x: 50 }}
@@ -53,7 +51,7 @@ const AboutSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                 <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
                   <MapPin className="text-blue-600" size={18} />
-                  <span>Lagos, Nigeria (Remote / Hybrid)</span>
+                  <span>ibadan, Nigeria (Remote / Hybrid)</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
                   <GraduationCap className="text-blue-600" size={18} />
