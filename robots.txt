@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niwani.github.io/my-portfolio/sitemap.xml
