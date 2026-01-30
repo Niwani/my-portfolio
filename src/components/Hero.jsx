@@ -16,8 +16,8 @@ export default function Hero() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Overlay: White/30% in Light Mode (for dark text), Dark/80% in Dark Mode (for white text) */}
-        <div className="absolute inset-0 bg-white/30 dark:bg-slate-950/80 backdrop-blur-[2px]"></div>
+        {/* Overlay: White/10% in Light Mode, Dark/40% in Dark Mode */}
+        <div className="absolute inset-0 bg-white/10 dark:bg-slate-950/40 backdrop-blur-[2px]"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
