@@ -5,7 +5,7 @@ import HeroImage from '../assets/hero-bg.png';
 
 export default function Hero() {
     return (
-       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       
       {/* 2. Background Image Layer */}
       <div 

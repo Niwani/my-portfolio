@@ -10,7 +10,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-[#020617] transition-colors">
+    <section id="about" className="py-16 md:py-24 bg-white dark:bg-[#020617] transition-colors">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <motion.div 
