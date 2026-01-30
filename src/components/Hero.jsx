@@ -49,10 +49,10 @@ export default function Hero() {
 
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group px-8 py-4 bg-blue-600 text-white rounded-xl font-bold transition-all hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2">
+              <a href="#projects" className="group px-8 py-4 bg-blue-600 text-white rounded-xl font-bold transition-all hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2">
                 View Portfolio
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
               <a 
                 href={`${import.meta.env.BASE_URL}Eniola_Ibiwoye_CV.pdf`} 
                 download="Eniola_Ibiwoye_CV"
